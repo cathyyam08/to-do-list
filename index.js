@@ -1,12 +1,12 @@
-document.addEventListener('D0MContentLoaded' function() {
+document.addEventListener('DOMContentLoaded', function() {
 
-var form = document.querySelector('form');
+  var form = document.querySelector('form');
 
-form.addEventListener('submit', function(event) {
+  form.addEventListener('submit', function(event) {
 
-  event.preventDefault();
+    event.preventDefault();
 
-  var todoInput = document.queryselector('.to-do-item');
+  var todoInput = document.querySelector('.to-do-item');
 
   var todoValue = todoInput.value;
 
@@ -17,5 +17,5 @@ form.addEventListener('submit', function(event) {
 
   toDo.appendChild(p);
   });
-  
+
 });
