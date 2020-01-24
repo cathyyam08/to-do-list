@@ -19,13 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-document.addEventListener('DOMContentLoaded', function() {
-
   var todos = ['Do Laundry', 'Cook Dinner'];
 
   todos.forEach(function(todos, index) {
-    var number = index + 1;
-    var textForPage = number + '. ' + todos;
+    var number = index;
+    var textForPage = todos;
     var p = document.createElement('p');
     p.innerHTML = textForPage;
     var container = document.querySelector('.todolist');
